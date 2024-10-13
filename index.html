@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .box1{
+            background: url(img/logo.png) center / cover;
+            height: 20px;
+            width: 90px;
+            margin: 10px;
+            display: flex;
+        }
+        input{
+            border-radius: 10px;
+            padding: 5px;
+        }
+        button{
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .duyme{
+            display: flex;
+            justify-content: end;
+            position: absolute;
+            color: black;
+            /* width: 80%; */
+            padding: 10px;
+            left: 165px;
+        }
+        .ad{
+            border: 1px solid gray;
+            background-color: #F2F2F2;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: .4s;
+            cursor: pointer;
+        }
+        .ad:hover{
+            background-color: #c0c0c0;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .button{
+            font-size: 20px;
+            padding: 7px;
+            margin: 0 0 3px 35px;
+            /* color: black; */
+            background-color: #eeeeee;
+            /* border: 1px solid gray; */
+            border-radius: 5px;
+            width: 110px;
+            transition: .4s;
+            cursor: pointer;
+
+        }
+        .button:hover{
+        /* color: #a39b9b; */
+        background-color: #c0c0c0;
+        }
+       .video{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            top: 150px;
+            left: 220px;
+            flex-wrap: wrap;
+        }
+        .img1 {
+            background: url(img/img1.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .img2 {
+            background: url(img/img2.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .img3 {
+            background: url(img/img3.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .img4 {
+            background: url(img/img4.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .img5 {
+            background: url(img/img5.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .img6 {
+            background: url(img/img6.jpg) center / cover;
+            border-radius: 5px;
+            width: 350px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+        .logo1 {
+            background: url(img/home.png) center / cover;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 125px;
+            left: 5px;
+        }
+
+        .logo2 {
+            background: url(./img/shorts.png) center / cover;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 168px;
+            left: 5px;
+        }
+
+        .logo3 {
+            background: url(img/subscriptions.png) center / cover;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 208px;
+            left: 5px;
+        }
+
+        .logo4 {
+            background: url(img/history.png) center / cover;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 250px;
+            left: 10px;
+        }
+
+        .logo5 {
+            background: url(img/playlist.webp) center / cover;
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            top: 290px;
+            left: 7px;
+        }
+
+        .logo6 {
+            background: url(img/watch-later.webp) center / cover;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 330px;
+            left: 5px;
+        }
+
+        .logo7 {
+            background: url(img/like.jpg) center / cover;
+            width: 30px;
+            height: 25px;
+            position: absolute;
+            top: 370px;
+            left: 5px;
+        }
+
+        .logo8 {
+            background: url(img/trend.png) center / cover;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 410px;
+            left: 7px;
+        }
+
+        .logo9 {
+            background: url(img/music.png) center / cover;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 450px;
+            left: 8px;
+        }
+
+        .logo10 {
+            background: url(img/gaming.png) center / cover;
+            width: 30px;
+            height: 20px;
+            position: absolute;
+            top: 493px;
+            left: 4px;
+        }
+
+        .logo11 {
+            background: url(img/sport.png) center / cover;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 530px;
+            left: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="box1"></div>
+        <div class="box2">
+            <input type="search" placeholder="search">
+        </div>
+        <div class="box3">
+            <button>Login</button>
+            <button>Sign up</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="duyme">
+         <div class="ad">All</div>
+         <div class="ad">Music</div>
+         <div class="ad">Mixes</div>
+         <div class="ad">Miyagi & Andy Panda</div>
+         <div class="ad">Gaming</div>
+         <div class="ad">Live</div>
+         <div class="ad">Animated films</div>
+         <div class="ad">Sketch comedy</div>
+         <div class="ad">Watched</div>
+         <div class="ad">Anime</div>
+         <div class="ad">New to you</div>
+         </div><br><br><br>
+        <div class="left">
+            <div class="button">Home</div>
+            <div class="button">Shorts</div>
+            <div class="button">Subscriptions</div>
+            <div class="button">History</div>
+            <div class="button">Playlists</div>
+            <div class="button">Watch later</div>
+            <div class="button">Liked videos</div>
+            <div class="button">Trending</div>
+            <div class="button">Music</div>
+            <div class="button">Gaming</div>
+            <div class="button">Sports</div>
+            <div class="logo1"></div>
+            <div class="logo2"></div>
+            <div class="logo3"></div>
+            <div class="logo4"></div>
+            <div class="logo5"></div>
+            <div class="logo6"></div>
+            <div class="logo7"></div>
+            <div class="logo8"></div>
+            <div class="logo9"></div>
+            <div class="logo10"></div>
+            <div class="logo11"></div>
+        </div>
+        <div class="video">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+            <div class="img5"></div>
+            <div class="img6"></div>
+        </div>
+    </div>
+</body>
+</html>
